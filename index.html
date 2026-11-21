@@ -6,6 +6,7 @@
     <title>TechStarter Day</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="icon" href="data:,">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -88,6 +89,23 @@
     <p id="seatMessage" class="status neutral" aria-live="polite">
         Masukkan jumlah kursi lalu tekan Cek Kursi.
     </p>
+</section>
+
+<section aria-labelledby="registrationTitle">
+    <form id="registrationForm">
+        
+ <label for="participantName">Nama peserta</label>
+ <input id="participantName" type="text" required maxlength="60">
+
+ <label for="seatRequestNew">Jumlah kursi</label>
+ <input id="seatRequestNew" type="number" min="1" step="1" required>
+
+ <button type="submit">Simpan Registrasi</button>
+</form>
+
+  <h2 id="registrationTitle">Daftar Registrasi</h2>
+  <p id="registrationSummary">Belum ada registrasi.</p>
+  <ul id="registrationList"></ul>
 </section>
 
     </main>
